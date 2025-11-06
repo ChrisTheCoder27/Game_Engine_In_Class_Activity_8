@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: d109130c8a3ead7418e4cf60bad6124f
+  productGUID: 7319c8adc4691ed4a871becb37b3acf1
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -919,10 +919,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 4631bd06-bb59-4bb8-a7eb-d62a65319229
+  cloudProjectId: a62e6304-6f83-47c9-b753-a69d7839e57c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Game Engine In Class 8
+  projectName: Game Engine In Class 8 2025-11-06_17-42-40
   organizationId: chriswaffles
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
