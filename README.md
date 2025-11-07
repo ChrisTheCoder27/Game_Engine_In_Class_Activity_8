@@ -1,2 +1,3 @@
-# Game_Engine_In_Class_Activity_8
-
+For this week's challenge, I tried to implement the dirty flag pattern by having a boolean variable "isDirty" be changed to true when a change was made to the player car's fuel value, which marks the flag as dirty and uses a delegate to invoke the event "OnFuelRefilled" to notify the UI class to update its fuel text to the new fuel value.
+The change in the player's fuel occurs when they collide with a fuel car, which sets the player's fuel to be the max, 100. After the change is made internally, the UI is updated to reflect the change, and the flag is marked as clean since the new fuel value is now being displayed.
+I chose to implement the dirty flag in this way because the game Road Fighter has a special car the player can hit that refills their fuel.
