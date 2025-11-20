@@ -1,3 +1,4 @@
+using Chapter.Command;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] InputActionAsset inputs;
     InputAction move;
+    InputAction toggleTurbo;
+
+    Command _turboButton;
 
     public float Fuel
     {
@@ -47,6 +51,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
 
         move = InputSystem.actions.FindAction("Move");
+        toggleTurbo = InputSystem.actions.FindAction("ToggleTurbo");
     }
 
     void Update()
@@ -61,5 +66,15 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Updating internal state by resetting fuel: " + fuel);
             isDirty = false;
         }
+
+        if (toggleTurbo.WasPerformedThisFrame())
+        {
+            
+        }
+    }
+
+    public void ToggleTurbo()
+    {
+        Debug.Log("Speeding up!");
     }
 }
